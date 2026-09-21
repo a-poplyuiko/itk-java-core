@@ -24,7 +24,7 @@ In its classic form, the pattern has three roles:
 |------------|----------------------------------------------------------------|--------------------------|
 | Originator | The object whose state we want to save and restore.            | MyStringBuilder          |
 | Memento    | A snapshot of the originator's state.                          | A plain String           |
-| Caretaker  | Stores snapshots but never inspects or modifies their content. | Deque< String > history  |
+| Caretaker  | Stores snapshots but never inspects or modifies their content. | `Deque<String> history`  |
 
 ### Core idea
 
@@ -83,16 +83,12 @@ visual and straightforward approach.
 1. Clone the repository:
 
        git clone https://github.com/a-poplyuiko/itk-java-core.git
-       cd itk-java-core
+       cd itk-java-core/task1-stringbuilder
 
-2. Checkout the task branch:
+2. Compile and run via Maven:
 
-       git checkout java-core-task1-stringbuilder
-
-3. Compile and run from the task1-stringbuilder directory:
-
-       javac src/main/java/com/itk/stringbuilder/*.java
-       java -cp src com.itk.stringbuilder.MyStringBuilderTest
+       mvn clean compile
+       mvn exec:java
 
 Expected output:
 
@@ -143,11 +139,11 @@ Expected output:
 
 ## References
 
-    - Memento pattern (Snapshot) — Wikipedia (RU):
-    https://ru.wikipedia.org/wiki/Хранитель_(шаблон_проектирования)
+- Memento pattern (Snapshot) — Wikipedia (RU):
+<https://ru.wikipedia.org/wiki/Хранитель_(шаблон_проектирования)>
 
-    - java-design-patterns — Memento example (Java source code):
-    https://github.com/iluwatar/java-design-patterns/tree/master/memento
+- java-design-patterns — Memento example (Java source code):
+<https://github.com/iluwatar/java-design-patterns/tree/master/memento>
 
-    - java.lang.StringBuilder — Oracle Java SE API:
-    https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html
+- java.lang.StringBuilder — Oracle Java SE API:
+<https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html>
