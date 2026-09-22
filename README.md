@@ -1,3 +1,3 @@
 # itk-java-core
 
-ITK. Практика Java Core
+ITK. Practice Java Core
